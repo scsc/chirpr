@@ -1,0 +1,10 @@
+{% extends "chirpr/base.html" %}
+
+{% block content %}
+<form class="form-signin" method="post" action="">
+    <h2 class="form-signin-heading">Registration</h2>
+    {% csrf_token %}
+    {{ form.as_table }}
+    <p><button class="btn btn-primary" type="submit">Sign up</button></p>
+</form>
+{% endblock content %}
